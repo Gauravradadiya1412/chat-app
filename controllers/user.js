@@ -1,7 +1,7 @@
 const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const JWT = require("jsonwebtoken");
-const { use } = require("../routes/userRoutes");
+// const { use } = require("../routes/userRoutes");
 
 exports.register = async (req, res) => {
   try {

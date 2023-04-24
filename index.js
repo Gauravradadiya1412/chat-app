@@ -15,8 +15,9 @@ const User = require("./models/user");
 const app = express()
 app.use(bodyParser.json())
 //routes
-app.use("/api/users", userRoutes)
 app.use(cors());
+app.use("/api/users", userRoutes)
+
 
 User.sync()
   .then(() => {
